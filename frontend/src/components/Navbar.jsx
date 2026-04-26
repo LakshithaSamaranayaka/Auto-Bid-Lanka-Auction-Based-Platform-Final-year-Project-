@@ -257,7 +257,7 @@ const Navbar = () => {
                     isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
                 }`}
             >
-                <div className="container-fluid">
+                <div className="w-full px-2 sm:px-3 md:px-4 lg:px-4">
                     <div className="flex justify-between items-center h-16 sm:h-20">
 
                         {/* Logo */}
@@ -276,7 +276,7 @@ const Navbar = () => {
                                 <Link
                                     key={link.path}
                                     to={link.path}
-                                    className={`text-gray-600 hover:text-orange-500 font-medium transition-colors text-sm ${
+                                    className={`text-gray-600 hover:text-orange-500 font-medium transition-colors text-base ${
                                         location.pathname === link.path ? 'text-orange-600 font-bold' : ''
                                     }`}
                                 >
