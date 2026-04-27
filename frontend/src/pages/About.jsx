@@ -52,7 +52,7 @@ const About = () => {
                                 {t('about.subtitle')}
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link to="/auctions" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-bold transition-all shadow-lg shadow-orange-500/25 hover:-translate-y-1">
+                                <Link to="/auctions" className="px-8 py-5 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-bold transition-all shadow-lg shadow-orange-500/25 hover:-translate-y-1">
                                     Start Bidding
                                 </Link>
                                 <div className="flex items-center gap-3 px-6 py-4 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm">
@@ -103,7 +103,7 @@ const About = () => {
                             <motion.div 
                                 animate={{ y: [0, 20, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                className="absolute -bottom-10 -left-10 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl hidden md:block"
+                                className="absolute -bottom-5 -left-175 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl hidden md:block"
                             >
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center">
@@ -127,7 +127,7 @@ const About = () => {
                     <motion.h2 {...fadeIn} className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
                         Why Choose Our <span className="text-orange-600">Premium Platform?</span>
                     </motion.h2>
-                    <motion.p {...fadeIn} className="text-xl text-gray-500 font-medium">
+                    <motion.p {...fadeIn} className="text-3xl text-gray-900 font-medium">
                         We combine cutting-edge technology with rigorous security to give you the best auction experience.
                     </motion.p>
                 </div>
@@ -147,7 +147,7 @@ const About = () => {
                         <motion.div
                             variants={fadeIn}
                             key={index}
-                            className="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-200/50 border border-gray-100 hover:border-orange-200 transition-all duration-500 group relative overflow-hidden"
+                            className="bg-white p-10 rounded-[3.5rem] shadow-xl shadow-gray-600/50 border border-gray-100 hover:border-orange-200 transition-all duration-500 group relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gray-50 rounded-bl-[5rem] -mr-8 -mt-8 transition-transform group-hover:scale-110 duration-500"></div>
                             
@@ -155,7 +155,7 @@ const About = () => {
                                 <item.icon className="w-8 h-8" />
                             </div>
                             <h3 className="relative z-10 text-2xl font-bold text-gray-900 mb-4 tracking-tight">{item.title}</h3>
-                            <p className="relative z-10 text-gray-500 leading-relaxed font-medium">{item.desc}</p>
+                            <p className="relative z-10 text-gray-800 leading-relaxed font-medium">{item.desc}</p>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -193,12 +193,12 @@ const About = () => {
                                         <div className="w-20 h-20 bg-white border-8 border-slate-100 rounded-full flex items-center justify-center text-orange-600 shadow-2xl relative z-10 group-hover:scale-110 group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 mb-8 overflow-hidden">
                                             <span className="font-black text-lg">{milestone.year}</span>
                                         </div>
-                                        <div className="bg-white p-8 rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 text-center hover:shadow-2xl transition-all duration-500">
+                                        <div className="bg-white p-8 rounded-4xl shadow-xl shadow-gray-400/50 border border-gray-100 text-center hover:shadow-2xl transition-all duration-500">
                                             <div className="w-10 h-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                                                 <milestone.icon className="w-5 h-5" />
                                             </div>
                                             <h4 className="font-bold text-gray-900 mb-2">{milestone.title}</h4>
-                                            <p className="text-sm text-gray-500 font-medium leading-relaxed">{milestone.desc}</p>
+                                            <p className="text-lg text-gray-700 font-medium leading-relaxed">{milestone.desc}</p>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -303,10 +303,10 @@ const About = () => {
                             {t('about.teamSub')}
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                            <Link to="/careers" className="w-full sm:w-auto px-12 py-5 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-black text-lg transition-all shadow-2xl shadow-orange-500/40 hover:-translate-y-1 flex items-center justify-center gap-3">
+                            <Link to="/careers" className="w-full sm:w-auto px-13 py-6 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-black text-lg transition-all shadow-2xl shadow-orange-500/40 hover:-translate-y-1 flex items-center justify-center gap-2">
                                 {t('about.teamBtn')} <ArrowRight className="w-6 h-6" />
                             </Link>
-                            <Link to="/contact" className="w-full sm:w-auto px-12 py-5 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-2xl font-black text-lg transition-all backdrop-blur-sm">
+                            <Link to="/contact" className="w-full sm:w-auto px-14 py-6 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-2xl font-black text-lg transition-all backdrop-blur-sm">
                                 Contact Team
                             </Link>
                         </div>
