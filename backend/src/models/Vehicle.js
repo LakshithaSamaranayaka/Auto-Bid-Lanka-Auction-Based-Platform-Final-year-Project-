@@ -20,7 +20,7 @@ const vehicleSchema = new mongoose.Schema({
     },
     images: [{ type: String }],
     listingType: { type: String, enum: ['auction', 'direct_buy', 'both'], required: true },
-    status: { type: String, enum: ['pending_approval', 'live', 'sold', 'unsold', 'cancelled'], default: 'pending_approval' },
+    status: { type: String, enum: ['pending_approval', 'live', 'rejected', 'sold', 'unsold', 'cancelled'], default: 'pending_approval' },
     directBuyPrice: { type: Number }, // Required if direct_buy
     buyer: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // Added to track who bought it
 }, { timestamps: true });

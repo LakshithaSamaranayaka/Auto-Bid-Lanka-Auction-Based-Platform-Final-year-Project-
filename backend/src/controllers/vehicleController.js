@@ -148,7 +148,7 @@ const getAllVehicles = async (req, res) => {
 const getAuctionVehicles = async (req, res) => {
     try {
         const { bodyType, fuelType, minPrice, maxPrice } = req.query;
-        let vehicleQuery = {};
+        let vehicleQuery = { status: 'live' };
 
         if (bodyType) vehicleQuery['specs.bodyType'] = bodyType;
         if (fuelType) vehicleQuery['specs.fuelType'] = fuelType;
@@ -314,6 +314,10 @@ const approveVehicle = async (req, res) => {
 
         if (status === 'live' && (vehicle.listingType === 'auction' || vehicle.listingType === 'both')) {
             await Auction.findOneAndUpdate({ vehicle: vehicle._id }, { status: 'live' });
+        }
+
+        if (status === 'rejected' && (vehicle.listingType === 'auction' || vehicle.listingType === 'both')) {
+            await Auction.findOneAndUpdate({ vehicle: vehicle._id }, { status: 'cancelled' });
         }
 
         let matchResult = null;
