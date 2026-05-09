@@ -76,7 +76,7 @@ const Contact = () => {
                                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                                     className="absolute -top-10 -right-5 p-5 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl hidden md:block"
                                 >
-                                    <MessageSquare className="w-8 h-8 text-orange-400" />
+                                    <MessageSquare className="w-8 h-8 text-orange-100" />
                                 </motion.div>
                                 <motion.div 
                                     animate={{ y: [0, 15, 0] }}
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
 
             {/* Main Content Grid */}
-            <div className="container-fluid py-20 -mt-24 relative z-20">
+            <div className="container-fluid py-30 -mt-24 relative z-20">
 
                 <div className="grid lg:grid-cols-12 gap-10">
                     
@@ -111,7 +111,7 @@ const Contact = () => {
                             <motion.div 
                                 key={i}
                                 variants={fadeIn}
-                                className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-gray-100 flex gap-6 hover:border-orange-200 transition-all group"
+                                className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-gray-100 flex gap-6 hover:border-orange-200 transition-all group"
                             >
                                 <div className={`p-4 bg-${item.color}-50 text-${item.color}-600 rounded-2xl group-hover:bg-${item.color}-600 group-hover:text-white transition-all transform group-hover:rotate-12`}>
                                     <item.icon className="w-8 h-8" />
@@ -127,7 +127,7 @@ const Contact = () => {
                         {/* Call Card */}
                         <motion.div 
                             variants={fadeIn}
-                            className="bg-gray-900 p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden group"
+                            className="bg-gray-900 p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden group"
                         >
                             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-bl-[4rem] group-hover:scale-110 transition-transform"></div>
                             <div className="relative z-10 flex flex-col gap-4">
