@@ -86,11 +86,11 @@ const About = () => {
                             {/* Floating Glass Cards */}
                             <motion.div 
                                 animate={{ y: [0, -20, 0] }}
-                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -top-6 -right-6 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl hidden md:block"
+                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                className="absolute -bottom-11 -left-100 p-5.5 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl hidden md:block"
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-500/20 text-green-400 rounded-2xl flex items-center justify-center">
+                                    <div className="w-12 h-11 bg-green-500/20 text-green-400 rounded-2xl flex items-center justify-center">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
