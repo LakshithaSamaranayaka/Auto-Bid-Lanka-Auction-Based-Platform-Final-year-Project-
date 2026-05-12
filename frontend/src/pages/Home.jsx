@@ -548,25 +548,25 @@ const Home = () => {
                             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative">
                                 <div className="grid grid-cols-2 gap-8">
                                     {/* Premium Decor Cards */}
-                                    <div className="bg-white p-6 rounded-[3rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-orange-100 transform -rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-700 z-10 translate-y-12">
-                                        <div className="relative rounded-[2rem] overflow-hidden mb-6 h-48">
-                                            <img src="https://images.unsplash.com/photo-1616422285623-11fb2666bc90?auto=format&fit=crop&q=80&w=600" alt="Car" className="w-full h-full object-cover" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                    <div className="bg-white p-3 rounded-[3rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-orange-100 transform -rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-700 z-10 translate-y-12">
+                                        <div className="relative rounded-[2rem] overflow-hidden mb-4 h-45">
+                                            <img src="https://tse2.mm.bing.net/th/id/OIP._NJHr1rwHJESfdPttlSk5AHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Car" className="w-full h-full object-cover" />
+                                            <div className=" bg-gradient-to-t from-black/20 to-transparent"></div>
                                         </div>
                                         <h4 className="font-black text-gray-900 text-lg mb-4">Mustang Mach-E</h4>
-                                        <div className="flex justify-between items-center bg-gray-50 p-4 rounded-2xl">
+                                        <div className="flex justify-between items-center bg-white p-4 rounded-2xl">
                                             <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Buy Now</span>
                                             <span className="text-xl font-black text-orange-600">Rs. 12,800,000</span>
                                         </div>
                                     </div>
 
-                                    <div className="bg-white p-6 rounded-[3rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-orange-100 transform rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-700 z-20 -translate-y-6">
-                                        <div className="relative rounded-[2rem] overflow-hidden mb-6 h-48">
-                                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0e28?auto=format&fit=crop&q=80&w=600" alt="Car" className="w-full h-full object-cover" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                    <div className="bg-white p-3 rounded-[3rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-orange-100 transform rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-700 z-20 -translate-y-6">
+                                        <div className="relative rounded-[2rem] overflow-hidden mb-4 h-40">
+                                            <img src="https://static0.topspeedimages.com/wordpress/wp-content/uploads/2022/11/Clip022800_00_19_01Still001.jpg?q=50&amp;fit=contain&amp;w=755&amp;h=430&amp;dpr=1.5" alt="Car" className="w-full h-full object-cover" />
+                                            <div className=" bg-gradient-to-t from-black/20 to-transparent"></div>
                                         </div>
                                         <h4 className="font-black text-gray-900 text-lg mb-4">Audi Q4 e-tron</h4>
-                                        <div className="flex justify-between items-center bg-gray-50 p-4 rounded-2xl">
+                                        <div className="flex justify-between items-center bg-white p-4 rounded-2xl">
                                             <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Buy Now</span>
                                             <span className="text-xl font-black text-orange-600">Rs. 16,200,000</span>
                                         </div>
