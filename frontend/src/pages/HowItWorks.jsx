@@ -93,7 +93,7 @@ const HowItWorks = () => {
             </div>
 
             {/* Steps Timeline - Redesigned */}
-            <div className="container-fluid py-20 -mt-24 relative z-20">
+            <div className="container-fluid py-34 -mt-27 relative z-20">
                 <motion.div 
                     variants={staggerContainer}
                     initial="initial"
